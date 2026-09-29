@@ -1,5 +1,5 @@
-const CACHE = "grok-web-v1";
-const ASSETS = ["./","index.html","manifest.webmanifest","icon.svg"];
+const CACHE = "grok-web-v2";
+const ASSETS = ["./","index.html","app.js","manifest.webmanifest","icon.svg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -27,7 +27,7 @@ self.addEventListener("fetch", (event) => {
         const copy = res.clone();
         caches.open(CACHE).then((cache) => cache.put(req, copy));
         return res;
-      })
+      }).catch(() => cached)
     )
   );
 });

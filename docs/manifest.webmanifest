@@ -1,0 +1,19 @@
+{
+  "name": "Grok Web",
+  "short_name": "Grok",
+  "description": "Talk to Grok from any device. Installable unofficial xAI chat app.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0b",
+  "theme_color": "#0a0a0b",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

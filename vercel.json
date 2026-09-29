@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/oauth/device", "destination": "/api/oauth-device" },
+    { "source": "/oauth/token", "destination": "/api/oauth-token" }
+  ]
+}
